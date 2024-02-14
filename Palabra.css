@@ -1,0 +1,87 @@
+#Palabra{
+    background: linear-gradient(red, tomato,  white);
+    font-size: 800%;
+    border-radius: 30px;    
+    padding: 10px;
+}
+.Palabra{
+    position: absolute;
+    top: 0%;
+    text-shadow: 10px 10px 10px black;
+    border-radius: 39px;
+    border: 6px solid black;
+    box-shadow: 10px 10px 10px black;
+    opacity: 80%;
+}
+
+body.tarde-modo{
+    background: linear-gradient(#002147,#4F81BD,#FFD700,#FF7F50,#D3D3D3);
+
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+
+  .Palabra{
+    animation: aparecer 5s ease-out forwards; /* 1s de duración, se aplica suavemente y se mantiene al final */
+  }
+  #pasto{
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    width: 1000%;
+    height: 10%;
+    background: linear-gradient(to bottom, #8BC34A, #558B2F, #33691E);
+  }
+
+  body.amanecer-modo {
+    background: linear-gradient(to bottom, #89cff0 0%, #f0e68c 100%);
+    overflow: hidden;
+  }
+  
+  #cielo.amanecer-modo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #89cff0 0%, #f0e68c 100%);
+  }
+  
+  .estrella.amanecer-modo {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  #horizon.amanecer-modo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient( green 0%, brown 100%);
+
+  }
+  
+  .sol.amanecer-modo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(255,255,0,0) 70%);
+  }
+
+body.noche-modo{
+    background: linear-gradient(to bottom, #001a33, #002b53, #003d74, #004f94, #0060b5, #0072d5, #0083f6, #0098ff, #00a6ff, #00b4ff, #00c2ff, #00d1ff, #00dfff, #00edff, #00fbff, #00ffff, #00faff, #00f5ff, #00f0ff, #00ebff, #00e6ff, #00e1ff, #00dcff, #00d7ff, #00d2ff, #00cdff, #00c8ff, #00c3ff, #00bfff, #00bbff, #00b6ff, #00b1ff, #00acff, #00a7ff, #00a2ff, #009dff, #0098ff, #0093ff, #008eff, #0089ff, #0084ff, #007fff, #007aff, #0075ff, #0070ff, #006bff, #0066ff, #0061ff, #005cff, #0057ff, #0052ff, #004dff, #0048ff, #0043ff, #003eff, #0039ff, #0034ff, #002fff, #002aff, #0025ff, #0020ff, #001aff, #0015ff, #0010ff, #000bff, #0006ff, #0000ff);
+}
